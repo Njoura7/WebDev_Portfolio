@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- importing the fonts   -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,700;1,700&family=Saira+Semi+Condensed&display=swap"
+            rel="stylesheet"
+        />
+        <!-- linking font awesome icons -->
+        <script src="https://kit.fontawesome.com/36c407eb91.js" crossorigin="anonymous"></script>
+        <!-- linking the css file   -->
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <ul class="nav-links" id="navBar">
+                    <li><a href="#country">Country</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+
+                    <li>
+                        <a href="#built-project">How I built this project</a>
+                    </li>
+                    <li><a href="#contact-me">Contact me</a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            <div id="dark-mode-toggle">
+                <i class="fa-solid fa-sun fa-2x"></i>
+                <i class="fa-solid fa-moon fa-2x"></i>
+
+                <i class="ball"></i>
+            </div>
+        </header>
+        <main>
+            <!-- <h1>Hello, My name is Aziz Najjar and this is my project for web development</h1> -->
+            <section id="country" class="country">
+                <h2>My country</h2>
+                <div class="img-country-container">
+                    <article class="flag">
+                        <h3>Flag</h3>
+                        <div><img src="images/TN-flag.png" alt="" /></div>
+                    </article>
+                    <article class="map">
+                        <h3>Map</h3>
+                        <div><img src="images/map2.jpg" alt="" /></div>
+                    </article>
+                    <article class="food">
+                        <h3>Food</h3>
+                        <div><img src="images/food2.jpg" alt="" /></div>
+                    </article>
+                    <article class="beach">
+                        <h3>Beach</h3>
+                        <div><img src="images/beach.jpg" alt="" /></div>
+                    </article>
+                    <article class="clothes">
+                        <h3>Clothes</h3>
+                        <div><img src="images/clothes.jpg" alt="" /></div>
+                    </article>
+                </div>
+            </section>
+            <section id="hobbies" class="hobbies">
+                <h2>My hobbies</h2>
+                <div class="hobbies-container">
+                    <article>
+                        <h4>
+                            One of my favourite hobbies is playing League Of Legends with my friends
+                        </h4>
+                        <img src="./images/lol.PNG" alt="lol" />
+                    </article>
+                    <article>
+                        <h4>I also like to play ping pong</h4>
+                        <span>&#127955;</span>
+                        <iframe
+                            width="400"
+                            height="280"
+                            src="https://www.youtube.com/embed/XO1J60jlc9g"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </article>
+                    <article>
+                        <h4>And if the weather is good, I enjoy playing volleyball outside</h4>
+                        <iframe
+                            width="400"
+                            height="280"
+                            src="https://www.youtube.com/embed/VqV7otb1E-8"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </article>
+                    <article>
+                        <h4>
+                            If not, we play in an indoor playground
+                            <p>&#128512;</p>
+                        </h4>
+                        <iframe
+                            width="400"
+                            height="280"
+                            src="https://www.youtube.com/embed/CYZox8NiqFU"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </article>
+                </div>
+            </section>
+
+            <section class="built-project">
+                <h2>How I built this project</h2>
+                <article>
+                    <h4>
+                        I used SCSS which is a CSS preprocessor that offers some useful and helpful
+                        properties
+                    </h4>
+                    <img src="./images/scss.PNG" alt="scss" />
+                </article>
+                <article>
+                    <h4>
+                        I divided the code into several files and imported them into a main file
+                    </h4>
+                    <img src="./images/mainscss.PNG" alt="css" />
+                </article>
+                <article>
+                    <h4>then everything is generated automatically into a big css file</h4>
+                    <img src="./images/css.PNG" alt="css" />
+                </article>
+            </section>
+            <section id="contact-me" class="contact-me">
+                <h2>Contact me</h2>
+                <!-- using teh third party app for receiving messages  -->
+                <form action="https://formsubmit.co/af773772a6bf731dc0e042a585887763" method="POST">
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="text" name="name" id="name" placeholder="Name" required />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email address"
+                        required
+                    />
+                    <input type="text" name="text" id="text" placeholder="Message" required />
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="https://njoura7.github.io/WebDev_portfolio/pages/thanks.html"
+                    />
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        <script src="js/darkmode.js"></script>
+        <script src="js/navLinks.js"></script>
+    </body>
+</html>
+
+<!-- RESOURCES:
+for SCSS: https://dev.to/felipperegazio/css-custom-properties-vars-with-sass-scss-a-practical-architecture-strategy-1m88 
+for darkMode https://www.youtube.com/watch?v=wodWDIdV9BY 
+for third-party application that host messages: https://formsubmit.co/-->

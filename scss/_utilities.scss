@@ -1,0 +1,118 @@
+.country {
+    img {
+        border-radius: 20px;
+        width: 100%;
+        height: 15rem;
+    }
+    .img-country-container {
+        display: grid;
+        grid-template-areas:
+            "flag map food"
+            "beach map clothes";
+
+        gap: 2rem;
+        padding: 1rem;
+
+        div {
+            display: grid;
+            place-items: center;
+        }
+
+        .flag {
+            grid-area: flag;
+            animation: slide-to-right 3s;
+        }
+        .map {
+            grid-area: map;
+            animation: showup 3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img {
+                height: 35rem;
+            }
+        }
+        .food {
+            grid-area: food;
+            animation: slide-to-left 3s;
+        }
+        .beach {
+            grid-area: beach;
+            animation: slide-to-right 3s;
+        }
+        .clothes {
+            grid-area: clothes;
+            animation: slide-to-left 3s;
+        }
+    }
+}
+.hobbies {
+    width: 100%;
+    img,
+    iframe {
+        border-radius: 1rem;
+    }
+    img {
+        width: 500px;
+    }
+    h4 {
+        font-size: 1.3rem;
+        margin: 2rem;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 30vw;
+    }
+    .hobbies-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+.built-project {
+    h4 {
+        font-size: 1.25rem;
+        margin: 1.5rem;
+    }
+}
+.contact-me {
+    height: 70vh;
+    padding-bottom: 5rem;
+    h2 {
+        margin-bottom: 3rem;
+    }
+    form {
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        input {
+            border-radius: 0.25rem;
+            border: none;
+            box-shadow: 10px 15px 30px -13px $black;
+        }
+        #name {
+            height: 2rem;
+            width: 50%;
+        }
+        #text {
+            height: 10rem;
+            width: 80%;
+        }
+        #email {
+            height: 2rem;
+            width: 50%;
+        }
+        button {
+            width: 8rem;
+            padding: 0.5rem 0;
+            border-radius: 1rem;
+            align-self: center;
+        }
+    }
+}
