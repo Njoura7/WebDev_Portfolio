@@ -13,7 +13,7 @@ navLinks.forEach((link) => {
             if (link.style.animation) {
                 link.style.animation = "";
             } else {
-                link.style.animation = `navLinksFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                link.style.animation = `navLinksFade 0.5s ease  ${index / 7 + 0.3}s`;
             }
         });
         //*burger animation
